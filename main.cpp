@@ -48,7 +48,21 @@ cout << str4.length() << endl;
 char ch = str6.at(2); // ch = str6[2];
 cout << ch << endl; // print the third element of the string. 
 
+char chf= str6.front(); //chf = str6[0];
+char chb = str6.back(); // chb = str6[str6.length() -1 ]; 
+cout << chf << chb << endl; 
 
+// c_str // old school strings
+const char* charstr = str6.c_str();
+printf("%s\n", charstr); 
+
+// add an argument at the end of the string 
+str6.append(" extenstion"); // str6 += " extenstion";
+str4.append(str6, 0,6); 
+cout << str5 << " " << str6 << endl; // str4 has the first 6 chars of str6.
+
+// future study 
+//https://repl.it/@TysonMcMillan/CPPStringOpperationsDrT
 
 
   return 0; 
